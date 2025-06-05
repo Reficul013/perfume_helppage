@@ -10,7 +10,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # or use ["*"] for development
+    allow_origins=["https://perfume-helppage-ui.onrender.com"],  # or use ["*"] for development
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
