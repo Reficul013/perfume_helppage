@@ -4,7 +4,7 @@ from models import Perfume, Base
 from database import Base
 
 # Path to enriched CSV
-CSV_FILE = "scentari_perfumes_enriched.csv"
+CSV_FILE = "scentari_perfumes_enriched_final.csv"
 
 # Setup database connection
 DATABASE_URL = "sqlite:///./perfumes.db"
