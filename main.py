@@ -7,6 +7,12 @@ from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
+
+# Add this healthcheck route
+@app.get("/ping")
+async def ping():
+    return {"status": "alive"}
+
 # Serve static folder
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
